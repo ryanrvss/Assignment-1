@@ -1,5 +1,6 @@
-<html> <head> <c><h4>Random Fun Facts</h4></c> </head> 
-<body> <div class="grid-container">
+<html> <head> <title> <c><h4>Random Fun Facts</h4></c> </title> </head> 
+
+    <body> <div class="grid-container">
     <div class="grid-item">1</div>
   <div class="grid-item">2</div>
   <div class="grid-item">3</div>
@@ -10,7 +11,60 @@
   <div class="grid-item">8</div>
   <div class="grid-item">9</div> <div></body>
 
-<style> </style></html> 
+<style> 
+    body{
+    font-size: 35px;
+    color: purple
+    background: #dac3be
+    text-align: center
+    display: grid;
+    grid-template-columns: 1fr 1 fr 1fr
+    grid-template-rows: 250px 1fr 1 fr 70px;}
+
+     div {
+         align-content: center;
+         }
+
+       .title {
+          grid-row-start: 1;
+          grid-row-end: 2;
+          grid-column-start: 1;
+          grid-column-end: 4;
+          }
+
+      .picture {
+          grid-row-start: 2;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          grid-column-end: 2;
+          }
+
+      .picture2 {
+          grid-row-start: 3;
+          grid-row-end: 4;
+          grid-column-start: 1;
+          grid-column-end: 2;
+          }
+
+      .content {
+          grid-row-start: 2;
+          grid-row-end: 4;
+          grid-column-start: 2;
+          grid-column-end: 4;
+          background: #5588dd;
+          border: 2px white solid;
+          }
+
+
+       .footer {
+          grid-row-start: 4;
+          grid-row-end: 5;
+          grid-column-start: 1;
+          grid-column-end: 4;
+          }
+
+    
+</style></html> 
 
 
 
